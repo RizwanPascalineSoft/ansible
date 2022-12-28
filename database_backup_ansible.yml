@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  gather_facts: true
+  vars_files:
+    - database_backup_secret.yml
+  tasks:
+    - shell: mysqldump -h localhost -u'{{db_user_name}}' -p'{{db_user_password}}' '{{db_name}}' > '{{db_name}}'.sql
+    - fetch:
+       src: '{{db_src_path}}'
+       dest: '{{db_dst_path}}'
+       flat: true
