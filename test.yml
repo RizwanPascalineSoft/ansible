@@ -1,11 +1,8 @@
-- hosts: all
+- hosts: 84.46.245.137
   become: true
   become_method: sudo
   tasks:
     - shell: mysqldump -h localhost -uroot -pg@17m8VK9Dbh26 migrationutility > migrationutility.sql
-
-- hosts: localhost
-  tasks:
     - fetch:
        src: /home/pascaline/automation/awx-17.1.0/migrationutility.sql
        dest: /home/pascaline/automation/awx-17.1.0/
