@@ -1,0 +1,10 @@
+- hosts: localhost
+  tasks:
+    - shell: mysqldump -h localhost -u root -pg@17m8VK9Dbh26 migrationutility > migrationutility.sql
+
+- hosts: localhost
+  tasks:
+    - fetch:
+       src: /home/pascaline/automation/awx-17.1.0/migrationutility.sql
+       dest: /home/pascaline/automation/awx-17.1.0/
+       flat: true
