@@ -1,4 +1,4 @@
-- hosts: 84.46.245.137
+- hosts: localhost
   become: true
   become_method: sudo
   tasks:
