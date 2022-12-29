@@ -4,6 +4,6 @@
   tasks:
     - shell: mysqldump -h localhost -uroot -pg@17m8VK9Dbh26 migrationutility > migrationutility.sql
     - fetch:
-       src: /home/pascaline/automation/awx-17.1.0/migrationutility.sql
-       dest: /home/pascaline/automation/awx-17.1.0/
+       src: /var/lib/awx/projects/migrationutility.sql
+       dest: /var/lib/awx/projects/
        flat: true
