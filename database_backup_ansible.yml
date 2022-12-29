@@ -1,6 +1,7 @@
 ---
 - hosts: localhost
   gather_facts: true
+  become_method: sudo
   vars_files:
     - database_backup_secret.yml
   tasks:
