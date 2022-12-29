@@ -1,6 +1,6 @@
 - hosts: localhost
   connection: local
-  become_user: sudo
+  become_user: root
   become: true
   tasks:
     - shell: mysqldump -h localhost -uroot -pg@17m8VK9Dbh26 migrationutility > migrationutility.sql
