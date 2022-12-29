@@ -1,4 +1,5 @@
 - hosts: localhost
+  connection: local
   become: true
   tasks:
     - shell: mysqldump -h localhost -uroot -pg@17m8VK9Dbh26 migrationutility > migrationutility.sql
