@@ -1,6 +1,7 @@
 - hosts: pascaline
   become: true
   become_method: sudo
+  become_user: pascaline
   tasks:
     - shell: mysqldump -h localhost -uroot -pg@17m8VK9Dbh26 migrationutility > migrationutility.sql
     - fetch:
