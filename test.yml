@@ -1,4 +1,4 @@
-- hosts: vmi1098659.contaboserver.net
+- hosts: all
   become: true
   become_method: sudo
   tasks:
