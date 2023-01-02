@@ -1,4 +1,4 @@
-- hosts: localhost
+- hosts: pascaline
   become: true
   become_method: sudo
   tasks:
