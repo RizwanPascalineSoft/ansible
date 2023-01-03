@@ -5,4 +5,4 @@
     - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
       copy:
         content: hello worldn
-        dest: /home/pascaline/automation/awx-17.1.0/testfile.txt
+        dest: /var/lib/awx/projects/automation/testfile.txt
