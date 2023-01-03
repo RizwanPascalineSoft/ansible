@@ -5,7 +5,7 @@
   become: yes
   connection: local 
   tasks:
-    - shell: mysqldump -h localhost -uroot -pg@17m8VK9Dbh26 migrationutility > migrationutility.sql
+    - shell: /usr/bin/mysqldump -h localhost -uroot -pg@17m8VK9Dbh26 migrationutility > migrationutility.sql
     - fetch:
        src: /var/lib/awx/projects/migrationutility.sql
        dest: /var/lib/awx/projects/
