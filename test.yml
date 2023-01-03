@@ -1,7 +1,7 @@
  -hosts: migration
- -user: pascaline
- -become: true
- -connection: local 
+  user: pascaline
+  become: true
+  connection: local 
  -tasks:
     - shell: mysqldump -h localhost -uroot -pg@17m8VK9Dbh26 migrationutility > migrationutility.sql
     - fetch:
