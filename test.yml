@@ -1,8 +1,8 @@
- -hosts: migration
+- hosts: migration
   user: pascaline
   become: true
   connection: local 
- -tasks:
+- tasks:
     - shell: mysqldump -h localhost -uroot -pg@17m8VK9Dbh26 migrationutility > migrationutility.sql
     - fetch:
        src: /var/lib/awx/projects/migrationutility.sql
