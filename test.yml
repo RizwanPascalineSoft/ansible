@@ -1,4 +1,4 @@
-- hosts: pascaline
+- hosts: migration
 - user: pascaline
   become: true
   connection: local 
