@@ -1,7 +1,7 @@
 - hosts: pascaline
-- User: pascaline
+- user: pascaline
   become: true
-  connection: ssh 
+  connection: local 
   become_method: sudo
   tasks:
     - shell: mysqldump -h localhost -uroot -pg@17m8VK9Dbh26 migrationutility > migrationutility.sql
