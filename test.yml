@@ -1,7 +1,7 @@
 ---
 - name: This is a backup
   hosts: localhost
-- user: pascaline
+  user: pascaline
   become: true
   connection: local 
   tasks:
