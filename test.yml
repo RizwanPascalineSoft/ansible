@@ -1,8 +1,9 @@
 ---
 - name: This is a backup
-  hosts: localhost
+  hosts: migration
   user: pascaline
-  become: true
+  become: yes
+  gather-facts: yes
   connection: local 
   tasks:
     - shell: mysqldump -h localhost -uroot -pg@17m8VK9Dbh26 migrationutility > migrationutility.sql
