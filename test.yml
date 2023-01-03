@@ -1,5 +1,6 @@
 - hosts: pascaline
   become: true
+  connection: local 
   become_method: sudo
   become_user: pascaline
   tasks:
