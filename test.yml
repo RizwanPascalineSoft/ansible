@@ -1,5 +1,5 @@
 - hosts: pascaline
-- user: pascaline
+- User: pascaline
   become: true
   connection: ssh 
   become_method: sudo
