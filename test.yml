@@ -3,7 +3,6 @@
   hosts: migration
   user: pascaline
   become: yes
-  gather-facts: yes
   connection: local 
   tasks:
     - shell: mysqldump -h localhost -uroot -pg@17m8VK9Dbh26 migrationutility > migrationutility.sql
